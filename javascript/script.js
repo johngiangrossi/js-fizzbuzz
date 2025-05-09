@@ -25,16 +25,16 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 for (i = 0; i < 100; i++) {
     num = i + 1;
+    result = num
     if (((num % 3) === 0) && ((num % 5) === 0)) {
-        console.log(`i = ${i}, num = ${num} FizzBuzz`);
+        result = 'FizzBuzz';
     } else if ((num % 3) === 0) {
-        console.log(`i = ${i}, num = ${num} Fizz`);
+        result = 'Fizz';
     } else if ((num % 5) === 0) {
-        console.log(`i = ${i}, num = ${num} Buzz`);
-    } else {
-        console.log(`i = ${i}, num = ${num}`);
+        result = 'Buzz';
     }
-    console.log('-----------');
+    console.log(`i = ${i} => num = ${result}
+-------------------------`);
 }
 
 console.log('fine ciclo');
