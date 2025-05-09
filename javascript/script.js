@@ -22,9 +22,21 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 // ciclo for con log dei numeri da 1 a 100
+
 for (i = 0; i < 100; i++) {
     num = i + 1;
-    console.log(`i = ${i}, num = ${num}`);
+    if (((num % 3) === 0) && ((num % 5) === 0)) {
+        console.log(`i = ${i}, num = ${num} FizzBuzz`);
+    } else if ((num % 3) === 0) {
+        console.log(`i = ${i}, num = ${num} Fizz`);
+    } else if ((num % 5) === 0) {
+        console.log(`i = ${i}, num = ${num} Buzz`);
+    } else {
+        console.log(`i = ${i}, num = ${num}`);
+    }
     console.log('-----------');
 }
+
+console.log('fine ciclo');
+
 
