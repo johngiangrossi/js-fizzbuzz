@@ -40,4 +40,21 @@ for (i = 0; i < rangeNum; i++) {
 
 console.log('fine ciclo');
 
+/*
+// ciclo for con log dei numeri da 1 a 100
+for (i = 0; i < 100; i++) {
+    num = i + 1;
+    result = num
+    if (((num % 3) === 0) && ((num % 5) === 0)) {
+        result = 'FizzBuzz';
+    } else if ((num % 3) === 0) {
+        result = 'Fizz';
+    } else if ((num % 5) === 0) {
+        result = 'Buzz';
+    }
+    console.log(`i = ${i} => num = ${result}
+-------------------------`);
+};
 
+console.log('fine ciclo');
+*/
