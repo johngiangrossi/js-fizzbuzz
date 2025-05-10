@@ -25,8 +25,8 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 const rangeNum = Math.abs(parseInt(prompt('inserire un numero intero')));  //number | NaN
 
 for (i = 0; i < rangeNum; i++) {
-    num = i + 1;
-    result = num
+    let num = i + 1;
+    let result = num
     if (((num % 3) === 0) && ((num % 5) === 0)) {
         result = 'FizzBuzz';
     } else if ((num % 3) === 0) {
@@ -43,8 +43,8 @@ console.log('fine ciclo');
 /*
 // ciclo for con log dei numeri da 1 a 100
 for (i = 0; i < 100; i++) {
-    num = i + 1;
-    result = num
+    let num = i + 1;
+    let result = num
     if (((num % 3) === 0) && ((num % 5) === 0)) {
         result = 'FizzBuzz';
     } else if ((num % 3) === 0) {
