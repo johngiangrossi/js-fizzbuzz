@@ -22,37 +22,37 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 */
 
 // ciclo for con log dei numeri da 1 a numero inserito dall'utente
-const rangeNum = Math.abs(parseInt(prompt('inserire un numero intero')));  //number | NaN
 
-for (i = 0; i < rangeNum; i++) {
-    let num = i + 1;
-    let result = num
-    if (((num % 3) === 0) && ((num % 5) === 0)) {
+const rangeNum = Math.abs(parseInt(prompt('inserire un numero intero')),10);  //number | NaN
+
+for (let i = 1; i <= rangeNum; i++) {
+    let result = i
+    if (((i % 3) === 0) && ((i % 5) === 0)) {
         result = 'FizzBuzz';
-    } else if ((num % 3) === 0) {
+    } else if ((i % 3) === 0) {
         result = 'Fizz';
-    } else if ((num % 5) === 0) {
+    } else if ((i % 5) === 0) {
         result = 'Buzz';
     }
-    console.log(`i = ${i} => num = ${result}
+    console.log(`i = ${i} => ${result}
 -------------------------`);
 };
 
 console.log('fine ciclo');
 
+
 /*
 // ciclo for con log dei numeri da 1 a 100
-for (i = 0; i < 100; i++) {
-    let num = i + 1;
-    let result = num
-    if (((num % 3) === 0) && ((num % 5) === 0)) {
+for (let i = 1; i <= 100; i++) {
+    let result = i
+    if (((i % 3) === 0) && ((i % 5) === 0)) {
         result = 'FizzBuzz';
-    } else if ((num % 3) === 0) {
+    } else if ((i % 3) === 0) {
         result = 'Fizz';
-    } else if ((num % 5) === 0) {
+    } else if ((i % 5) === 0) {
         result = 'Buzz';
     }
-    console.log(`i = ${i} => num = ${result}
+    console.log(`i = ${i} => ${result}
 -------------------------`);
 };
 
