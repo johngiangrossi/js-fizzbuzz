@@ -21,9 +21,10 @@ proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
     -stampo la parola 'Buzz'
 */
 
-// ciclo for con log dei numeri da 1 a 100
+// ciclo for con log dei numeri da 1 a numero inserito dall'utente
+const rangeNum = Math.abs(parseInt(prompt('inserire un numero intero')));  //number | NaN
 
-for (i = 0; i < 100; i++) {
+for (i = 0; i < rangeNum; i++) {
     num = i + 1;
     result = num
     if (((num % 3) === 0) && ((num % 5) === 0)) {
@@ -35,7 +36,7 @@ for (i = 0; i < 100; i++) {
     }
     console.log(`i = ${i} => num = ${result}
 -------------------------`);
-}
+};
 
 console.log('fine ciclo');
 
